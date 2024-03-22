@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+    <link rel="stylesheet" href="style/main.css">
+    <script defer src="js/app.js"></script> 
+</head> 
+<body> 
+     <div class="wrapper">
+        <h2 class="title">Событие</h2>
+        <div class="task-form">
+            <label class="label">Название:</label>
+            <input type="text" onchange="checkInput()" class="task-input" id="event" placeholder="Введите название события">
+            <label class="label">Дата:</label>
+             <input type="date" onchange="checkInput()" class="task-input" id="date" placeholder="Введите дату">
+             <label class="label">Описание:</label>
+             <input type="text" onchange="checkInput()" class="task-input" id="description" placeholder="Введите описание">
+             <label class="label">Место:</label>
+             <input type="text" onchange="checkInput()" class="task-input" id="place" placeholder="Введите место">
+             <label class="label">Фото:</label>
+             <input type="file" onchange="checkInput()" class="task-input" id="foto" placeholder="Адресс фото:">
+        </div>
+            <button disabled onclick="addTask()" class="task-button" id="taskButton">Добавить</button>
+        <ul class="task-list" id="task-List">
+        </ul>
+     </div>
+</body> 
+</html>
